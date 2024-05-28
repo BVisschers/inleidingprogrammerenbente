@@ -1,0 +1,151 @@
+* {
+  margin: 0em;
+  padding: 0em;
+}
+
+header {
+  color: black;
+  flex-wrap: wrap;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 100%;
+}
+
+li {
+  display: inline;
+  padding: 1em;
+}
+
+li img {
+  margin-top: 1.5em;
+  width: 5%;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: end;
+  margin-right: 5%;
+  margin-top: -1.5em;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-bottom: 1em;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 1em;
+  font-size: 15pt;
+}
+
+body.achtergrond {
+  background-image: url(images/achtergrond_normaal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.twee_rij {
+  display: flex;
+  padding: 2em;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 7em;
+}
+
+section.twee_rij img {
+  width: 30vw;
+}
+
+.cupcake_groot {
+  margin-top: 20em;
+}
+
+#achtergrond_knop {
+  margin-left: 4em;
+}
+
+#elementen_toevoegen img {
+  width: 8%;
+  padding: 1em;
+  padding-bottom: 4em;
+}
+
+#elementen_toevoegen {
+  margin-left: 4em;
+  padding-left: 4em;
+}
+
+@keyframes slideIn {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+#klaarKnop img {
+  margin-top: -30.5%;
+  margin-left: 80%;
+  width: 15%;
+}
+
+#afbeeldingStapelen img {
+  position: absolute;
+  margin-left: -38.2%;
+  margin-top: -39.8%;
+  width: 30%;
+  display: none;
+}
+
+.afbeeldingenMenu {
+  z-index: 1;
+}
+
+.show {
+  display: block !important;
+}
+
+#afbeeldingStapelen2 img {
+  position: absolute;
+  margin-left: -33.2%;
+  margin-top: -34.5%;
+  width: 20%;
+  display: none;
+}
+
+.afbeeldingenMenu2 {
+  z-index: 1;
+}
+
+#afbeeldingStapelen3 img {
+  position: absolute;
+  margin-left: -29%;
+  margin-top: -29.8%;
+  width: 12%;
+  display: none;
+}
+
+.afbeeldingenMenu3 {
+  z-index: 1;
+}
+
+#afbeeldingMenuAlles img{
+  width: 15%;
+}
+
+#naamveld {
+  position: relative;
+  animation: slideIn 3s ease-out forwards;
+}
+
+.zichtbaar {
+  display: block;
+}
+
+.onzichtbaar {
+  display: none;
+}
+

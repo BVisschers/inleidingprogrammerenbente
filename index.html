@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eindopdracht programmeren spel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="achtergrond" id="achtergrond_groot">
+    <header>
+        <nav>
+            <ul>
+                <li><img id="achtergrond_knop" src="images/standaard_achtergrond.png" alt="Standaard achtergrond"></li>
+                <li><img id="cafe_knop" src="images/cafe_achtergrond.png" alt="Cafe als achtergrond"></li>
+                <li><img id="bakkerij_knop" src="images/bakkerij_achtergrond.png" alt="Bakkerij als achtergrond"></li>
+                <li><img id="keuken_knop" src="images/keuken_achtergrond.png" alt="Keuken als achtergrond"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>   
+        <section>
+            <h1>Welkom <span id="naamveld">...</span></h1>
+        </section>
+        <section class="twee_rij">
+            <article id="cupcake_vorm">
+                <img class="cupcake_groot" id="leeg_vormpje" src="images/cupcake_vormpje.png" alt="Cupcake vorm">
+                <img class="cupcake_groot onzichtbaar" id="vanille_groot" src="images/vanille_basis.png"
+                    alt="Cupcake vorm">
+                <img class="cupcake_groot onzichtbaar" id="chocolade_groot" src="images/chocolade_basis.png"
+                    alt="Cupcake vorm">
+            </article>
+
+            <article id="elementen_toevoegen">
+                <div id="afbeeldingMenuAlles">
+                    <h2 id="hint">hint</h2>
+                    <p>Kies de basis van jouw cupcake</p>
+                    <img id="vanille_basis" src="images/vanille_basis.png" alt="Vanille basis">
+                    <img id="chocolade_basis" src="images/chocolade_basis.png" alt="Chocolade basis">
+
+                    <p>Kies je toefje</p>
+                    <div id="afbeeldingenMenu">
+                        <img id="vanille_menu" src="images/vanille_toefje.png" alt="Vanille toefje">
+                        <img id="chocolade_menu" src="images/chocolade_toefje.png" alt="Chocolade toefje">
+                        <img id="aardbei_menu" src="images/aardbei_toefje.png" alt="Aardbeien toefje">
+                        <img id="framboos_menu" src="images/framboos_toefje.png" alt="Frambozen toefje">
+                    </div>
+
+                    <p>Kies je decoratie</p>
+                    <div id="afbeeldingenMenu2">
+                        <img id="hartje_menu" src="images/decoratie_hartjes.png" alt="Hartjes als decoratie">
+                        <img id="smarties_menu" src="images/decoratie_smarties.png" alt="Smarties als decoratie">
+                        <img id="marshmellow_menu" src="images/decoratie_marshmellow.png"
+                            alt="Marsmellows als decoratie">
+                        <img id="witte_chocolade_menu" src="images/decoratie_witte_chocola.png"
+                            alt="Witte chocolade als decoratie">
+
+                        <p>Voeg een badge toe</p>
+                        <img id="badge_roze_menu" src="images/badge_roze.png" alt="Roze badge">
+                        <img id="badge_lime_kleur_menu" src="images/badge_lime_kleur.png" alt="Lime kleurige badge">
+                        <img id="badge_ster_menu" src="images/badge_ster.png" alt="Groene badge met ster">
+                    </div>
+                </div>
+
+                <article id="klaarKnop">
+                    <img id="audioControlButton" src="images/button.png" alt="Klaar butten met audio">
+                    <audio id="audioKnop">
+                        <source src="images/hoera.mp3" type="audio/mpeg">
+                    </audio>
+                </article>
+
+                <div id="afbeeldingStapelen">
+                    <img id="vanille_toefje" src="images/vanille_toefje.png" alt="Vanille toefje">
+                    <img id="chocolade_toefje" src="images/chocolade_toefje.png" alt="Chocolade toefje">
+                    <img id="aardbei_toefje" src="images/aardbei_toefje.png" alt="Aardbeien toefje">
+                    <img id="framboos_toefje" src="images/framboos_toefje.png" alt="Frambozen toefje">
+                </div>
+
+                <div id="afbeeldingStapelen2">
+                    <img id="hartje_deco" src="images/decoratie_hartjes.png" alt="Hartjes als decoratie">
+                    <img id="smarties_deco" src="images/decoratie_smarties.png" alt="Smarties als decoratie">
+                    <img id="marshmellow_deco" src="images/decoratie_marshmellow.png" alt="Marsmellows als decoratie">
+                    <img id="witte_chocolade_deco" src="images/decoratie_witte_chocola.png"
+                        alt="Witte chocolade als decoratie">
+                </div>
+
+                <div id="afbeeldingStapelen3">
+                    <img id="badge_roze_deco" src="images/badge_roze.png" alt="Roze badge">
+                    <img id="badge_lime_kleur_deco" src="images/badge_lime_kleur.png" alt="Lime kleurige badge">
+                    <img id="badge_ster_deco" src="images/badge_ster.png" alt="Groene badge met ster">
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
