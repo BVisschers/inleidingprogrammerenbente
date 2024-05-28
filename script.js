@@ -161,12 +161,42 @@ BadgeSterMenu.addEventListener("click", () => {
 });
 
 
-/* If - else + audio met behulp van chatGPT gemaakt - mijn zoekopdracht:maak een if else met audio eraan vast, als je dan op een knop klikt speelt het af en stopt het */
+/* If - else + audio met behulp van chatGPT gemaakt - mijn zoekopdracht:maak een if else met audio eraan vast, als je dan op een knop klikt speelt het af en stopt het
 document.addEventListener("DOMContentLoaded", () => {
   const audioKnop = document.getElementById("audioKnop");
   const audioControlButton = document.getElementById("audioControlButton");
 
   audioControlButton.addEventListener("click", () => {
+    if (audioKnop.paused) {
+      audioKnop.play();
+      audioControlButton.src = "images/stop_button.png";
+      audioControlButton.alt = "Stop audio/ knop";
+    } else {
+      audioKnop.pause();
+      audioControlButton.src = "images/button.png";
+      audioControlButton.alt = "Speel audio/ knop af";
+    }
+  });
+});
+*/
+
+/* If - else + audio met behulp van chatGPT gemaakt - mijn zoekopdracht: maak een if else met audio eraan vast, als je dan op een knop klikt speelt het af en stopt het. 
+Tweede zoekopdracht,hoe zorg ik ervoor dat deze knop alleen afspeelt als mijn cupcake versierd is.*/
+function isCupcakeOpgemaakt() {
+  const decoratieElementen = document.querySelectorAll('.show');
+  return decoratieElementen.length > 0;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const audioKnop = document.getElementById("audioKnop");
+  const audioControlButton = document.getElementById("audioControlButton");
+
+  audioControlButton.addEventListener("click", () => {
+    if (!isCupcakeOpgemaakt()) {
+      alert('Versier eerst de cupcake voordat je kunt afronden :)');
+      return;
+    }
+
     if (audioKnop.paused) {
       audioKnop.play();
       audioControlButton.src = "images/stop_button.png";
