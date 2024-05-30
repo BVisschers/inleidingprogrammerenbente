@@ -102,7 +102,7 @@ chocoladeToevoegen.addEventListener("click", onderkantVeranderen4);
 /* If - else + audio chatGPT - prompt: maak een if else met audio eraan vast, als je dan op een knop klikt speelt het af en stopt het. 
 Tweede zoekopdracht,hoe zorg ik ervoor dat deze knop alleen afspeelt als mijn cupcake versierd is.*/
 function isCupcakeOpgemaakt() {
-  const decoratieElementen = document.querySelectorAll('.show');
+  const decoratieElementen = document.querySelectorAll(".show");
   return decoratieElementen.length > 0;
 }
 
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   audioControlButton.addEventListener("click", () => {
     if (!isCupcakeOpgemaakt()) {
-      alert('Versier eerst de cupcake voordat je kunt afronden :)');
+      alert("Versier eerst de cupcake voordat je kunt afronden :)");
       return;
     }
 
@@ -165,7 +165,6 @@ framboosMenu.addEventListener("click", () => {
   framboosToefje.classList.toggle("show");
 });
 
-
 hartjeMenu.addEventListener("click", () => {
   hartjeDeco.classList.toggle("show");
 });
@@ -182,7 +181,6 @@ witteChocoladeMenu.addEventListener("click", () => {
   witteChocoladeDeco.classList.toggle("show");
 });
 
-
 badgeRozeMenu.addEventListener("click", () => {
   badgeRozeDeco.classList.toggle("show");
 });
@@ -194,5 +192,3 @@ badgeLimeKleurMenu.addEventListener("click", () => {
 BadgeSterMenu.addEventListener("click", () => {
   badgeSterDeco.classList.toggle("show");
 });
-
-
