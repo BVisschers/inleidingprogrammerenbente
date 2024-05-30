@@ -1,6 +1,6 @@
 console.log("hallo wereld");
 
-/* Const om de achtergrond aan te passen */
+/* Const om de achtergrond aan te passen - met behulp van Berry */
 const veranderCafe = document.querySelector("#cafe_knop");
 const veranderBakkerij = document.querySelector("#bakkerij_knop");
 const veranderKeuken = document.querySelector("#keuken_knop");
@@ -14,7 +14,7 @@ const hoofdChocolade = document.querySelector("#chocolade_groot");
 const vanilleToevoegen = document.querySelector("#vanille_basis");
 const chocoladeToevoegen = document.querySelector("#chocolade_basis");
 
-/* Const om de grote cupcake (links) aan te passen/ versieren met onderdelen uit het menu*/
+/* Const cupcake (links) versieren met onderdelen uit het menu*/
 let vanilleToefje = document.querySelector("#vanille_toefje");
 let chocoladeToefje = document.querySelector("#chocolade_toefje");
 let aardbeiToefje = document.querySelector("#aardbei_toefje");
@@ -99,7 +99,7 @@ function onderkantVeranderen4() {
 
 chocoladeToevoegen.addEventListener("click", onderkantVeranderen4);
 
-/* If - else + audio met behulp van chatGPT gemaakt - mijn zoekopdracht: maak een if else met audio eraan vast, als je dan op een knop klikt speelt het af en stopt het. 
+/* If - else + audio chatGPT - prompt: maak een if else met audio eraan vast, als je dan op een knop klikt speelt het af en stopt het. 
 Tweede zoekopdracht,hoe zorg ik ervoor dat deze knop alleen afspeelt als mijn cupcake versierd is.*/
 function isCupcakeOpgemaakt() {
   const decoratieElementen = document.querySelectorAll('.show');
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* EventListener om de achtergronden te veranderen */
+/* EventListener om de achtergronden te veranderen - hulp van berry */
 /*https://www.pexels.com/nl-nl/foto/lege-bar-gevuld-met-lichten-260922/*/
 veranderCafe.addEventListener("click", () => {
   document.body.style.backgroundImage = "url(images/achtergrond_cafe.png)";
